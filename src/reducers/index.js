@@ -16,6 +16,12 @@ export const getCartProducts = (state) =>
     }));
 
 // Tính tổng tiền giỏ hàng
+// export const getTotal = (state) =>
+//     getCartProducts(state)
+//         .reduce((total, p) => total + p.price * p.quantity, 0)
+//         .toFixed(2);
+
+
 export const getTotal = (state) =>
     getCartProducts(state)
         .reduce((total, p) => total + p.price * p.quantity, 0)
