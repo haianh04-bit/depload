@@ -15,13 +15,6 @@ export const getCartProducts = (state) =>
         quantity: fromCart.getQuantity(state.cart, id),
     }));
 
-// Tính tổng tiền giỏ hàng
-// export const getTotal = (state) =>
-//     getCartProducts(state)
-//         .reduce((total, p) => total + p.price * p.quantity, 0)
-//         .toFixed(2);
-
-
 export const getTotal = (state) =>
     getCartProducts(state)
         .reduce((total, p) => total + p.price * p.quantity, 0)
