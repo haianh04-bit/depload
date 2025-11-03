@@ -21,6 +21,15 @@ const store = configureStore({
 store.dispatch(getAllProducts())
 
 // Render ứng dụng
+// ReactDOM.createRoot(document.getElementById('root')).render(
+//   <React.StrictMode>
+//     <Provider store={store}>
+//       <App />
+//     </Provider>
+//   </React.StrictMode>
+// )
+
+// Render ứng dụng
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={store}>
